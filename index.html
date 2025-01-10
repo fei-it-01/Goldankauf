@@ -26,8 +26,11 @@
     
     <p>This is a simple demonstration page showing how content and an embedded element can be displayed together.</p>
     
-    <div class="iframe-container">
-        <img src="/api/placeholder/800/400" alt="placeholder for iframe content">
+    <div style="position: relative; width: 100%; height: 400px; overflow: hidden;">
+    <iframe src="https://ownx.com/prices/gold-xaukg/?height=500" 
+            frameborder="0" 
+            style="border: none; position: absolute; transform: scale(1); transform-origin: top left; width: 100%; height: 400px; top: -78px;">
+    </iframe>
     </div>
     
     <p>The above space would normally contain your embedded content. In a real implementation, this would show the gold prices iframe from ownx.com.</p>
