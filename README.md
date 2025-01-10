@@ -1,1 +1,3 @@
 # Goldankauf
+
+Täglich aktualisiert
