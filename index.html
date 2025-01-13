@@ -11,6 +11,16 @@
             margin: 0 auto;
             padding: 20px;
         }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            width: 18%;
+            max-width: 920px;
+            height: auto;
+            border: 0px solid #ddd;
+        }
         .container {
             display: flex;
             justify-content: space-between;
@@ -31,7 +41,19 @@
         .image-placeholder img {
             width: 80%;
             height: auto;
-            border: 1px solid #ddd;
+            border: 0px solid #ddd;
+        }
+        .right-half p {
+            display: flex;
+            justify-content: space-between;
+            margin: 1em 0; /* Optional spacing between lines */
+        }
+        .gold-type {
+            text-align: left;
+        }
+        .gold-price {
+            text-align: right;
+            min-width: 150px; /* Adjust this value to ensure alignment */
         }
         .iframe-container {
             position: relative;
@@ -39,7 +61,7 @@
             height: 320px;
             overflow: hidden;
             background: #f5f5f5;
-            border: 1px solid #ddd;
+            border: 0px solid #ddd;
             margin-top: 20px;
         }
         .iframe-container iframe {
@@ -49,7 +71,8 @@
             transform-origin: top left;
             width: 100%;
             height: 500px;
-            top: -115px; /* Cropping adjustment */
+            top: -117px; /* Cropping adjustment */
+            overflow: hidden; /* Ensure no overflow content */
         }
         .center {
             display: block;
@@ -60,6 +83,9 @@
     </style>
 </head>
 <body>
+    <header>
+        <img src="https://feichtinger-shop.com/cdn/shop/files/Logo4_48f76067-f679-43a6-ae3b-56791f2f12f5.svg?v=1718797908&width=240" alt="Header Image">
+    </header>
     <div class="container">
         <!-- Left Half -->
         <div class="left-half">
@@ -76,11 +102,11 @@
         <!-- Right Half -->
         <div class="right-half">
             <h2>AKTUELLER GOLDPREIS</h2>
-            <p>Bruchgold 8 Karat - 24.007,00 EUR / kg</p>
-            <p>Bruchgold 14 Karat - 42.174,00 EUR / kg</p>
-            <p>Bruchgold 18 Karat - 54.026,00 EUR / kg</p>
+            <p><span class="gold-type">Bruchgold 8 Karat</span><span class="gold-price">24,07 € / g</span></p>
+            <p><span class="gold-type">Bruchgold 14 Karat</span><span class="gold-price">42,17 € / g</span></p>
+            <p><span class="gold-type">Bruchgold 18 Karat</span><span class="gold-price">54,03 € / g</span></p>
             <div class="iframe-container">
-                <iframe src="https://ownx.com/prices/gold-xaukg/?height=500"></iframe>
+                <iframe src="https://ownx.com/prices/gold-xaukg/?height=500" scrolling="no"></iframe>
             </div>
         </div>
     </div>
